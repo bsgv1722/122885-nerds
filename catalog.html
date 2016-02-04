@@ -3,43 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс каталог</title>
+     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
 <header class="main-header">
-       <div class="container">
+      <div class="container">
+          <a href="#" class="logo">
+            <img src="img/logo.png">
+          </a>
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+              
+            </ul>
+          </nav>
 
-       <a href="#" class="logo">
-       <img src="http://placehold.it/150x100">
-</a>
-         <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-            
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="login" href="#">Корзина</a>
-        </div>
-      </div>
+          <div class="user-block">
+            <a class="login" href="#">Корзина</a>
+          </div>
       <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
     </header>
 
-<main class="main-content">
 
- <div class="catalog-filter">
-<div class="range-filter">
+<main class="container">
+
+ <div class="content">
+
+    <div class="catalog-filter">
+
+      <div class="range-filter">
             <div class="range-controls">
                 <div class="scale"><div style="width:70%;" class="bar"></div></div>
                 <div class="toggle min-toggle"></div>
@@ -49,119 +53,138 @@
                 от <input class="min-price" type="text" value="0">
                 до <input class="max-price" type="text" value="15 000">
             </div>
-        </div>
+      </div>
 
 
        
-        	<form action="https://echo.htmlacademy.ru" method="post"> </form>
+      <form action="https://echo.htmlacademy.ru" method="post" class="filter"> 
 
-        	<div class="filter-block">
-<legend>Сетка</legend> <br>
-<label> <input type="radio" id="cbox1" value="first_checkbox" name="code"><span> Адаптивная</span> </label>
-<label> <input type="radio" id="cbox2" value="second_checkbox" name="code"> <span>Фиксированная</span> </label>
-<label> <input type="radio" id="cbox3" value="third_checkbox" name="code"><span> Резиновая </span></label>
-</div>
+            <fieldset class="filter-block">
+                <legend>Сетка</legend>
+                <label> <input type="radio" id="cbox1" value="first_checkbox" name="code"><span> Адаптивная</span> </label>
+                <label> <input type="radio" id="cbox2" value="second_checkbox" name="code"> <span>Фиксированная</span> </label>
+                <label> <input type="radio" id="cbox3" value="third_checkbox" name="code"><span> Резиновая </span></label>
+            </fieldset>
 
-<div class="filter-block">
-<legend>Слайдер</legend>
-	  <label> <input type="checkbox" id="cbox4" value="fourth_checkbox" name="code"> <span>Слайдер</span>  </label>    
-     <label><input type="checkbox" id="cbox5" value="fifth_checkbox" name="code" ><span> Блок</span></label>  
-     <label><input type="checkbox" id="cbox6" value="six_checkbox" name="code" ><span> Новости</span></label>
-    <label><input type="checkbox" id="cbox7" value="seven_checkbox" name="code"> <span>Галерея</span></label>
-    <label> <input type="checkbox" id="cbox8" value="eight_checkbox" name="code"><span> Корзина</span></label>
-</div>
-<a href="#" class="button">Показать</a>
-      </div>
+            <fieldset class="filter-block">
+                <legend>Слайдер</legend>
+                	  <label> <input type="checkbox" id="cbox4" value="fourth_checkbox" name="code"> <span>Слайдер</span>  </label>    
+                     <label><input type="checkbox" id="cbox5" value="fifth_checkbox" name="code" ><span> Блок</span></label>  
+                     <label><input type="checkbox" id="cbox6" value="six_checkbox" name="code" ><span> Новости</span></label>
+                    <label><input type="checkbox" id="cbox7" value="seven_checkbox" name="code"> <span>Галерея</span></label>
+                    <label> <input type="checkbox" id="cbox8" value="eight_checkbox" name="code"><span> Корзина</span></label>
+            </fieldset>
 
-      <div class="sort">
-      	<span class="sort-title">Сортировать</span>
-      	<div class="sort-type">
-      		<a href="#">По цене</a>
-      		<a href="#">По типу</a>
-      		<a href="#">По функционалу</a>
-      	</div>
+            <input type="submit" value="Показать" class="button">
+      
+      </form>
+    </div>
 
-      	<div class="sort-dir">
-      		<a href="#">1</a>
-      		<a href="#">2</a>
-      	</div>
-      </div>
+    <div class="catalog-produkt">
+
+       <div class="sort">
+          <span class="sort-title">Сортировать</span>
+          <div class="sort-type">
+          		<a href="#">По цене</a>
+          		<a href="#">По типу</a>
+          		<a href="#">По функционалу</a>
+          </div>
+
+      	  <div class="sort-dir">
+        		<a href="#">1</a>
+        		<a href="#">2</a>
+          </div>
+       </div>
 
       <div class="produkt-info">
-      	<article class="product-img">  
-      	<a href="#" class="logo">
-       <img src="http://placehold.it/150x100">
-        </a></article>
+        	<article class="product-img">  
+          	<a href="#" class="logo">
+            <img src="img/prod1.jpg">
+            </a>
+          </article>
 
-        <article class="product-img">  
-      	<a href="#" class="logo">
-       <img src="http://placehold.it/150x100">
-        </a></article>
+         <article class="product-img">  
+            <a href="#" class="logo">
+            <img src="img/prod2.jpg">
+            </a>
+          </article>
 
-<article class="product-img">  
-      	<a href="#" class="logo">
-       <img src="http://placehold.it/150x100">
-        </a></article>
+          <article class="product-img">  
+            <a href="#" class="logo">
+            <img src="img/prod3.jpg">
+            </a>
+          </article>
 
-<article class="product-img">  
-      	<a href="#" class="logo">
-       <img src="http://placehold.it/150x100">
-        </a></article>
+          <article class="product-img">  
+            <a href="#" class="logo">
+            <img src="img/prod4.jpg">
+            </a>
+          </article>
 
-<article class="product-img">  
-      	<a href="#" class="logo">
-       <img src="http://placehold.it/150x100">
-        </a></article>
+          <article class="product-img">  
+            <a href="#" class="logo">
+            <img src="img/prod5.jpg">
+            </a>
+          </article>
 
-<article class="product-img">  
-      	<a href="#" class="logo">
-       <img src="http://placehold.it/150x100">
-        </a></article>
+          <article class="product-img">  
+            <a href="#" class="logo">
+            <img src="img/prod6.jpg">
+            </a>
+          </article>
 
       </div>
 
-      <ul>
-	<li>
-		<a href="#">1</a>
-	</li>
-	<li>
-		<a href="#">2</a>
-	</li>
-	<li>
-		<a href="#">3</a>
-	</li>
-	<li>
-		<a href="#">4</a>
-	</li>
-	<li> <a href="#" class="button">Следующая</a></li>
-</ul>
-<div class="map">
-<a href="#">Ссылка на карту</a>
-<div class="contacts">
+
+
+        <ul class="paginaition">
+          	<li>
+          		<a href="#">1</a>
+          	</li>
+          	<li>
+          		<a href="#">2</a>
+          	</li>
+          	<li>
+          		<a href="#">3</a>
+          	</li>
+          	<li>
+          		<a href="#">4</a>
+          	</li>
+          	<li> <a href="#" class="button">Следующая</a></li>
+        </ul>
+
+    </div>
+
+ </div>
+
+
+</main>
+
+    <div class="map">
+      <a href="#">Ссылка на карту</a>
+      <div class="contacts">
           Nerds Disain<br>
           191186 Санкт-Петербург<br>
           +78120000000<br>
           <a href="#" class="button">Напишите нам</a>
-        </div>
-<a href="#" class="logo">
-  <img src="http://placehold.it/150x100">
-</a>
-</div>
-
-</main>
+      </div>
+      <a href="#" class="logo">
+        <img src="img/logo-map.png">
+      </a>
+    </div>
 
 <footer class="main-footer">
 
 
   <div class="container">
-<section class="footer-social">
-<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+    <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
 
           <p>Давайте дружить это выгодно!</p>
-<p>Скидка 10 % для друзей из социальных сетей</p>
-</section>
+          <p>Скидка 10 % для друзей из социальных сетей</p>
+    </section>
 
     
   </div>
