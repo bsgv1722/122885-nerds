@@ -10,7 +10,7 @@
 <header class="main-header">
       <div class="container">
           <a href="#" class="logo">
-            <img src="img/logo.png">
+            <img src="img/logo.png" alt="лошотип студии">
           </a>
           <nav class="main-navigation">
             <ul>
@@ -33,7 +33,9 @@
           <div class="user-block">
             <a class="login" href="#">Корзина</a>
           </div>
+    </div>
       <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
+
     </header>
 
 
@@ -47,19 +49,20 @@
 
        
       <form action="https://echo.htmlacademy.ru" method="post" class="filter"> 
-
-        <div class="range-filter">
-            <div class="range-controls">
-                <div class="scale"><div style="width:70%;" class="bar"></div></div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
-            </div>
-            <div class="price-controls">
-                от <input class="min-price" type="text" value="0">
-                до <input class="max-price" type="text" value="15 000">
-            </div>
-      </div>
-
+      <fieldset class="filter-block"> 
+         <legend>Стоимость</legend>
+          <div class="range-filter">
+              <div class="range-controls">
+                  <div class="scale"><div style="width:70%;" class="bar"></div></div>
+                  <div class="toggle min-toggle"></div>
+                  <div class="toggle max-toggle"></div>
+              </div>
+              <div class="price-controls">
+                  от <input class="min-price" type="text" value="0">
+                  до <input class="max-price" type="text" value="15 000">
+              </div>
+        </div>
+    </fieldset>
             <fieldset class="filter-block">
                 <legend>Сетка</legend>
                 <label> <input type="radio" id="cbox1" value="first_checkbox" name="code"><span> Адаптивная</span> </label>
@@ -102,58 +105,74 @@
       <div class="product-list">
         	<article class="product">  
           	<a href="#" class="product-img">
-              <img src="img/prod1.jpg">
+              <img src="img/prod1.jpg" alt="AVIATOR">
+            </a>
+              <div class="product-info"> 
+                  <b>AVIATOR</b>
+                  <span>Одностраничный макет с авторским дизайном </span>
+                  <a href="#" class="button button-prise">10000</a>
+              </div>
+          </article>
+
+          <article class="product">  
+            <a href="#" class="product-img">
+              <img src="img/prod2.jpg" alt="SUNSET">
             </a>
             <div class="product-info"> 
+                <b>SUNSET</b>
+                <span>Интернет магазин с личным кабинетом</span>
+                <a href="#" class="button button-prise">10000</a>
             </div>
           </article>
 
           <article class="product">  
             <a href="#" class="product-img">
-              <img src="img/prod2.jpg">
+              <img src="img/prod3.jpg" alt="FORTE">
             </a>
-            <div class="product-info"> 
-              <b>SUNSET</b>
-              <span>Интернет магазин с личным кабинетом</span>
-            </div>
+              <div class="product-info"> 
+                  <b>FORTE</b>
+                    <span>Отличный макет для личного блога </span>
+                    <a href="#" class="button button-prise">10000</a>
+              </div>
           </article>
 
           <article class="product">  
             <a href="#" class="product-img">
-              <img src="img/prod3.jpg">
+              <img src="img/prod4.jpg" alt="MODERNE ORGANIC">
             </a>
-            <div class="product-info"> 
-            </div>
+             <div class="product-info"> 
+                <b>MODERNE ORGANIC</b>
+                  <span>Сайт для ресторана и быстрого питания </span>
+                  <a href="#" class="button button-prise">10000</a>
+              </div>
           </article>
 
           <article class="product">  
             <a href="#" class="product-img">
-              <img src="img/prod4.jpg">
+              <img src="img/prod5.jpg" alt="AVENUE">
             </a>
-            <div class="product-info"> 
-            </div>
+             <div class="product-info"> 
+                <b>AVENUE</b>
+                  <span>Макет для блока о путешествиях </span>
+                    <a href="#" class="button button-prise">10000</a>
+              </div>
           </article>
 
           <article class="product">  
-            <a href="#" class="product-img">
-              <img src="img/prod5.jpg">
+            <a href="#" class="product-img" >
+             <img src="img/prod6.jpg" alt="DOVETAIL">
             </a>
-            <div class="product-info"> 
-            </div>
-          </article>
-
-          <article class="product">  
-            <a href="#" class="product-img">
-             <img src="img/prod6.jpg">
-            </a>
-            <div class="product-info"> 
-            </div>
+             <div class="product-info"> 
+                <b>DOVETAIL</b>
+                  <span>Макет для блока о путешествиях </span>
+                    <a href="#" class="button button-prise">10000</a>
+              </div>
           </article>
       </div>
 
 
 
-        <ul class="paginaition">
+        <ul class="pagination">
           	<li>
           		<a href="#">1</a>
           	</li>
@@ -185,7 +204,7 @@
           <a href="#" class="button">Напишите нам</a>
       </div>
       <a href="#" class="logo">
-        <img src="img/logo-map.png">
+        <img src="img/logo-map.png" alt="карта">
       </a>
     </div>
 
