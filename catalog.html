@@ -8,11 +8,14 @@
 
   <body>
 <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
+          
+      <div class="navigation">
           <a href="#" class="logo">
             <img src="img/logo.png" alt="лошотип студии">
           </a>
           <nav class="main-navigation">
+
             <ul>
               <li>
                 <a href="#">Студия</a>
@@ -33,17 +36,20 @@
           <div class="user-block">
             <a class="login" href="#">Корзина</a>
           </div>
-    </div>
+          </div>
+   
       <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ</h1>
+
+       </div>
 
     </header>
 
 
-<main class="container">
+<main class="container clearfix">
 
  <div class="content">
 
-    <div class="catalog-filter">
+    <div class="catalog-filter clearfix">
 
  
 
@@ -65,18 +71,18 @@
     </fieldset>
             <fieldset class="filter-block">
                 <legend>Сетка</legend>
-                <label> <input type="radio" id="cbox1" value="first_checkbox" name="code"><span> Адаптивная</span> </label>
-                <label> <input type="radio" id="cbox2" value="second_checkbox" name="code"> <span>Фиксированная</span> </label>
-                <label> <input type="radio" id="cbox3" value="third_checkbox" name="code"><span> Резиновая </span></label>
+                <label> <input type="radio" id="cbox1" value="first_checkbox" name="grid"><span> Адаптивная</span> </label>
+                <label> <input type="radio" id="cbox2" value="second_checkbox" name="grid"> <span>Фиксированная</span> </label>
+                <label> <input type="radio" id="cbox3" value="third_checkbox" name="grid"><span> Резиновая </span></label>
             </fieldset>
 
             <fieldset class="filter-block">
                 <legend>Слайдер</legend>
-                	  <label> <input type="checkbox" id="cbox4" value="fourth_checkbox" name="code"> <span>Слайдер</span>  </label>    
-                     <label><input type="checkbox" id="cbox5" value="fifth_checkbox" name="code" ><span> Блок</span></label>  
-                     <label><input type="checkbox" id="cbox6" value="six_checkbox" name="code" ><span> Новости</span></label>
-                    <label><input type="checkbox" id="cbox7" value="seven_checkbox" name="code"> <span>Галерея</span></label>
-                    <label> <input type="checkbox" id="cbox8" value="eight_checkbox" name="code"><span> Корзина</span></label>
+                	  <label> <input type="checkbox" id="cbox4" value="fourth_checkbox" name="slider"> <span>Слайдер</span>  </label>    
+                     <label><input type="checkbox" id="cbox5" value="fifth_checkbox" name="slider" ><span> Блок</span></label>  
+                     <label><input type="checkbox" id="cbox6" value="six_checkbox" name="slider" ><span> Новости</span></label>
+                    <label><input type="checkbox" id="cbox7" value="seven_checkbox" name="slider"> <span>Галерея</span></label>
+                    <label> <input type="checkbox" id="cbox8" value="eight_checkbox" name="slider"><span> Корзина</span></label>
             </fieldset>
 
             <input type="submit" value="Показать" class="button">
@@ -84,7 +90,7 @@
       </form>
     </div>
 
-    <div class="catalog-product">
+    <div class="catalog-product clearfix">
 
        <div class="sort">
           <span class="sort-title">Сортировать</span>
@@ -168,50 +174,55 @@
                     <a href="#" class="button button-prise">10000</a>
               </div>
           </article>
+
+           <ul class="pagination">
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">4</a>
+            </li>
+            <li> <a href="#">Следующая</a></li>
+        </ul>
       </div>
 
 
 
-        <ul class="pagination">
-          	<li>
-          		<a href="#">1</a>
-          	</li>
-          	<li>
-          		<a href="#">2</a>
-          	</li>
-          	<li>
-          		<a href="#">3</a>
-          	</li>
-          	<li>
-          		<a href="#">4</a>
-          	</li>
-          	<li> <a href="#">Следующая</a></li>
-        </ul>
+       
 
     </div>
+
 
  </div>
 
 
 </main>
 
-    <div class="map">
-      <a href="#">Ссылка на карту</a>
-      <div class="contacts">
-          Nerds Disain<br>
-          191186 Санкт-Петербург<br>
-          +78120000000<br>
-          <a href="#" class="button">Напишите нам</a>
-      </div>
-      <a href="#" class="logo">
-        <img src="img/logo-map.png" alt="карта">
-      </a>
+<div class="map">
+    <a href="#">Ссылка на карту</a>
+    <div class="contacts">
+            Nerds Disain<br>
+            191186 Санкт-Петербург<br>
+            +78120000000<br>
+            <a href="#" class="button">Напишите нам</a>
     </div>
+    <a href="#" class="pointer">
+      <img src="img/logo-map.png">
+     </a>
+  </div>
+
+
 
 <footer class="main-footer">
 
 
-  <div class="container">
+  <div class="container clearfix">
     <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>

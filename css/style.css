@@ -17,12 +17,14 @@
 .main-header {
   margin-bottom: 80px;
 }
-.logo {float: left;}
+
+.logo {float: left;
+margin-right: 160px;
+margin-left: 0px;}
 
 .main-navigation 
 {width: 430px;
-float: left;
-margin-left: 160px;}
+float: left;}
 
 .user-block 
 {float: right;
@@ -56,9 +58,14 @@ width: 576px;}
 .right-block {float: right;
 width: 260px;}
 
+.description-block {margin-bottom: 65px;}
+
+ .partners-img {margin-bottom: 89px;}
+
 
 .map {margin-bottom:  70px;
-position: relative;}
+position: relative;
+clear: both;}
 
 
 .footer-social {width: 240px;
@@ -66,3 +73,30 @@ float: left;
 margin-right: 80px;}
 
 .footer-description {float: right;}
+
+
+
+
+.catalog-filter {float: left;
+margin-right: 70px;
+width: 240px;
+margin-bottom: 80px;
+}
+
+.filter-block {margin-bottom: 50px;}
+
+.catalog-product {float: right;
+width: 570px;
+margin-bottom: 80px;}
+
+.product-list {margin-bottom: 80px;}
+
+.product {width: 240px;
+float: left;
+margin-right: 90px;
+margin-bottom: 80px;}
+
+.product:nth-child(2n) {margin-right: 0px;}
+
+.sort {margin-bottom: 20px;
+width: 570px;}
